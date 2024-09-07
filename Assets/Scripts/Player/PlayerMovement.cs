@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private float movementInputDirection;
+    
+    private Rigidbody2D rb;
+
+    public float movementSpeed;
+
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        CheckInput();
+
+
+        /*
         // Create movement for spaceship to move left and right
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -21,5 +31,21 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(Vector3.right * Time.deltaTime * 5);
         }
+        */
+    }
+
+    private void FixedUpdate()
+    {
+        ApplyMovement();
+    }
+
+    private void CheckInput()
+    {
+        movementInputDirection = Input.GetAxisRaw("Horizontal");
+    }
+
+    private void ApplyMovement()
+    {
+        rb.velocity = new Vector2(movementSpeed * movementInputDirection * Time.deltaTime, rb.velocity.y);
     }
 }

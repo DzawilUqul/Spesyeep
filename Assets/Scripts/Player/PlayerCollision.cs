@@ -11,9 +11,10 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log("Hit Obstacle");
         }
 
-        if (other.gameObject.tag == "FinishLine")
+        if (other.gameObject.tag == "Trigger")
         {
-            Debug.Log("Finish Line Reached!");
+            Debug.Log("Trigger Line Reached!");
         }
     }
+    
 }

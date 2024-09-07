@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - FinishLine
+  - TriggerLine
+  - Trigger
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1521742779
+    locked: 0
+  - name: Platform
+    uniqueID: 1625919325
     locked: 0
   - name: Game
     uniqueID: 82608801

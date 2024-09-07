@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4893988412493130677}
   - component: {fileID: 4492091225291282889}
-  - component: {fileID: -7930736470174627036}
   - component: {fileID: 8350659041430804732}
   m_Layer: 0
   m_Name: Enemy
@@ -32,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4492091225291282889
 SpriteRenderer:
@@ -73,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 82608801
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.990566, g: 0, b: 0, a: 1}
@@ -86,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-7930736470174627036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7716101510097362459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bc6e62b1a3c58a468cf6d706fa49a35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &8350659041430804732
 CircleCollider2D:
   m_ObjectHideFlags: 0
