@@ -25,5 +25,7 @@ public class SpawnFoods : MonoBehaviour
         {
             spawnedFood.AddComponent<Rigidbody2D>();
         }
+
+        spawnedFood.AddComponent<DestroyFood>();
     }
 }

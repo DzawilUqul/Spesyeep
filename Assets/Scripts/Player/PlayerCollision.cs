@@ -9,6 +9,10 @@ public class PlayerCollision : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Debug.Log("Hit Obstacle");
+            
+            Destroy(other.gameObject);
+
+            GameManager.instance.AddScore(1);
         }
 
         if (other.gameObject.tag == "Trigger")
