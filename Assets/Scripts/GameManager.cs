@@ -77,11 +77,5 @@ public class GameManager : MonoBehaviour
         score += points;
         scoreText.text = "Score : " + score.ToString();
     }
-
-    public void ResetScore()
-    {
-        score = 0;
-        scoreText.text = "Score : " + score.ToString();
-    }
     
 }
