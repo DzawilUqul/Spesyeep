@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
+    public static GameManager Instance; //1
+
     private void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.gameObject.tag == "Enemy")
@@ -12,8 +14,8 @@ public class PlayerCollision : MonoBehaviour
             
             Destroy(other.gameObject);
 
-            GameManager.instance.AddScore(1);
-        } 
+            GameManager.instance.AddScore += 1;
+        }
 
         if (other.gameObject.tag == "Trigger")
         {

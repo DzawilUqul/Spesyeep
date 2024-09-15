@@ -17,7 +17,7 @@ public class SpawnFoods : MonoBehaviour
     private void SpawnFood()
     {
         // food spawn random pada x -7 sampai 7 dan y 6
-        Vector3 spawnPosition = new Vector3(Random.Range(-29f, -13f), 6f, 0f);
+        Vector3 spawnPosition = new Vector3(Random.Range(-27f, -17f), 6f, 0f);
         GameObject spawnedFood = Instantiate(foodPrefab[Random.Range(0, foodPrefab.Length)], spawnPosition, Quaternion.identity);
 
         // Ensure the spawned object has a Rigidbody2D component
