@@ -13,7 +13,7 @@ public class PlayerCollision : MonoBehaviour
             Destroy(other.gameObject);
 
             GameManager.instance.AddScore(1);
-        }
+        } 
 
         if (other.gameObject.tag == "Trigger")
         {

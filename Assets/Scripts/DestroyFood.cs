@@ -13,6 +13,8 @@ public class DestroyFood : MonoBehaviour
         if (transform.position.y <= destroyYThreshold)
         {
             Destroy(gameObject); 
+            Debug.Log("Food destroyed");
+            GameManager.health -= 1;
         }
     }
 }
