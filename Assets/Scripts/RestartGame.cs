@@ -15,8 +15,10 @@ public class RestartGame : MonoBehaviour
         Debug.Log("Restarting game");        
         Time.timeScale = 1;
         GameManager.health = 3;
+
         GameManager.instance.ResetScore();
-        
+
+        // ScoreManager.scoreCount = 0; // gak mau reset score
         gameOver.gameObject.SetActive(false);
         ScoreManager.scoreCount = 0;
     }

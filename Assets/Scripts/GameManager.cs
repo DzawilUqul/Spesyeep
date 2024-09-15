@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public int score = 0; 
     public TextMeshProUGUI scoreText;    
     public static GameManager instance;
+    public static int scoreCount = 0;
 
     public GameObject gameOver, heart1, heart2, heart3;
 
@@ -78,4 +79,10 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score : " + score.ToString();
     }
     
+    public void ResetScore()
+    {
+        score = 0;
+        scoreText.text = "Score : " + score.ToString();
+    }
+
 }
