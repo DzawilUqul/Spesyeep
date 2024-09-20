@@ -4,9 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
-  - TriggerLine
-  - Trigger
+  - Food
   layers:
   - Default
   - TransparentFX

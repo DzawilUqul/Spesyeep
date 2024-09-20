@@ -83,6 +83,12 @@ public class GameManager : MonoBehaviour
     {
         score = 0;
         scoreText.text = "Score : " + score.ToString();
-    }
+    }
+
+    // public void StartGame()
+    // {
+    //     // Melanjutkan game
+    //     Time.timeScale = 1f;
+    // }
 
 }

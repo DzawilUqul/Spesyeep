@@ -18,9 +18,9 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Food")
         {
-            Debug.Log("Hit Obstacle");
+            Debug.Log("Eat Food");
             
             Destroy(other.gameObject);
             if (isPlayerEat == false)
@@ -37,10 +37,6 @@ public class PlayerCollision : MonoBehaviour
             GameManager.instance.AddScore(1);
         }
 
-        if (other.gameObject.tag == "Trigger")
-        {
-            Debug.Log("Trigger Line Reached!");
-        }
     }
 
     // generate coroutine to delay the player eat image

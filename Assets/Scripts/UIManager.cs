@@ -1,14 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 
-public class RestartGame : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
+    
     public GameObject gameOver;
     public static int scoreCount;
+    public void StartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
+        
+    }
+
+    public void ExitGame()
+    {
+        Debug.Log("Game is exiting...");
+        Application.Quit();
+    }
 
     public void RestartLevel()
     {
@@ -21,5 +32,11 @@ public class RestartGame : MonoBehaviour
         // ScoreManager.scoreCount = 0; // gak mau reset score
         gameOver.gameObject.SetActive(false);
         ScoreManager.scoreCount = 0;
+    }
+
+    public void ExitToMenu()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 }

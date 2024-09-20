@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnFoods : MonoBehaviour
 {
     [SerializeField] private GameObject[] foodPrefab;
-    [SerializeField] private float spawnInterval;
+    [SerializeField] private float spawnInterval = 2f;
 
     // Start is called before the first frame update
     void Start()
